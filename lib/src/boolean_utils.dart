@@ -1,10 +1,14 @@
 /// Convert a boolean to an int.
-int boolToInt(bool value) {
+int boolToInt(dynamic value) {
+  if (value is int) {
+    return value;
+  }
+
   return value ? 1 : 0;
 }
 
 /// Convert a boolean to an int, or null.
-int? boolToIntOrNull(bool? value) {
+int? boolToIntOrNull(dynamic value) {
   if (value == null) {
     return null;
   }
@@ -13,12 +17,16 @@ int? boolToIntOrNull(bool? value) {
 }
 
 /// Convert an int to a boolean.
-bool intToBool(int value) {
+bool intToBool(dynamic value) {
+  if (value is bool) {
+    return value;
+  }
+
   return value == 1 ? true : false;
 }
 
 /// Convert an int to a boolean, or null.
-bool? intToBoolOrNull(int? value) {
+bool? intToBoolOrNull(dynamic value) {
   if (value == null) {
     return null;
   }

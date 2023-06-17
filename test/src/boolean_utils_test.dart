@@ -4,6 +4,10 @@ import 'package:sqflite_ext/sqflite_ext.dart';
 
 void main() {
   group('boolToInt', () {
+    test('returns int directly', () {
+      expect(boolToInt(0), 0);
+    });
+
     test('returns 1 when true', () {
       expect(boolToInt(true), 1);
     });
@@ -20,6 +24,10 @@ void main() {
   });
 
   group('intToBool', () {
+    test('returns boolean directly', () {
+      expect(intToBool(false), false);
+    });
+
     test('returns true when 1', () {
       expect(intToBool(1), true);
     });
