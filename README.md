@@ -3,7 +3,7 @@
 
 # sqflite_ext
 
-Useful utilities to augment [sqflite](https://pub.dev/packages/sqflite). Designed to be unobtrusive helpers, so still access sqflite directly (not a wrapper).
+Useful utilities to augment [sqflite](https://pub.dev/packages/sqflite). Designed to be unobtrusive helpers, so you still access sqflite directly (not a wrapper).
 
 ## Features
 
