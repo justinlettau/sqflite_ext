@@ -28,7 +28,7 @@ void main() async {
   const item = DemoItem(isAwesome: true);
   await db.insert('demo', item.toJson());
 
-  // query with named args
+  // query with named arguments
   final p = parseNamedArgs(
     'SELECT * FROM demo WHERE isAwesome = :status',
     {'status': true},
