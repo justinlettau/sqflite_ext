@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/justinlettau/sqflite_ext/compare/v1.1.2...v1.2.0) (2023-06-30)
+
+
+### Features
+
+* named arguments ([c515bbf](https://github.com/justinlettau/sqflite_ext/commit/c515bbf9479a87f8b56c53a4090d58a91edb3cdc))
+
 ## 1.1.2 (2023-06-30)
 
 
