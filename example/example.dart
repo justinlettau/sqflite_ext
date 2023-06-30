@@ -27,6 +27,13 @@ void main() async {
   // use with json_annotation (see class DemoItem below)
   const item = DemoItem(isAwesome: true);
   await db.insert('demo', item.toJson());
+
+  // query with named args
+  final p = parseNamedArgs(
+    'SELECT * FROM demo WHERE isAwesome = :status',
+    {'status': true},
+  );
+  await db.query(p.query, whereArgs: p.arguments);
 }
 
 @immutable
